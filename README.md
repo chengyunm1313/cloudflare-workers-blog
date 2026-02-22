@@ -1,43 +1,47 @@
-> 这是一个运行在cloudflare workers 上的博客程序,使用 cloudflare KV作为数据库,无其他依赖.
-兼容静态博客的速度,以及动态博客的灵活性,方便搭建不折腾.很稳定
-演示地址: [https://blog.gezhong.vip](https://blog.gezhong.vip "cf-blog演示站点")
+> 這是一個運行在 Cloudflare Workers 上的部落格程式，使用 Cloudflare KV 作為資料庫，無其他依賴。
+> 兼容靜態部落格的速度，以及動態部落格的靈活性，方便搭建不折騰。很穩定
+> 演示地址: [https://blog.gezhong.vip](https://blog.gezhong.vip 'cf-blog演示站點')
 
-### TG 讨论群: [@CloudflareBlog](https://t.me/cloudflareblog "")
-# 主要特点
-* 使用workers提供的KV作为数据库
-* 使用cloudflare缓存html来降低KV的读写
-* 所有html页面均为缓存,可达到静态博客的速度
-* 使用KV作为数据库,可达到wordpress的灵活性
-* 后台使用markdown语法,方便快捷
-* 一键发布(页面重构+缓存清理)
+### TG 討論群: [@CloudflareBlog](https://t.me/cloudflareblog)
 
-# 承载能力
- * KV基本不存在瓶颈,因为使用了缓存,读写很少
- * 唯一瓶颈是 workers的日访问量10w,大约能承受2万IP /日
- * 文章数:1G存储空间,几万篇问题不大
+# 主要特點
 
-# 部署步骤
-  这里没有实时预览真难受,一系列坑会慢慢填到博客,敬请关注 [https://blog.gezhong.vip](https://blog.gezhong.vip "")
+- 使用 Workers 提供的 KV 作為資料庫
+- 使用 Cloudflare 快取 HTML 來降低 KV 的讀寫
+- 所有 HTML 頁面均為快取，可達到靜態部落格的速度
+- 使用 KV 作為資料庫，可達到 WordPress 的靈活性
+- 後台使用 Markdown 語法，方便快捷
+- 一鍵發布 (頁面重構 + 快取清理)
 
-# 更新日志
+# 承載能力
 
-> [持续更新地址https://blog.gezhong.vip/article/009000/update-log.html](https://blog.gezhong.vip/article/009000/update-log.html "更新日志")
-  
-## 最近更新(2020-12-31)
-* 2020-12-31:加入sitemap.xml
-* 2020-12-24:本次更新,主要针对seo和阅读次数,以及多项细节优化
+- KV 基本不存在瓶頸，因為使用了快取，讀寫很少
+- 唯一瓶頸是 Workers 的日訪問量 10 萬，大約能承受 2 萬 IP / 日
+- 文章數：1G 儲存空間，幾萬篇問題不大
 
+# 部署步驟
 
+這裡沒有即時預覽真難受，一系列坑會慢慢填到部落格，敬請關注 [https://blog.gezhong.vip](https://blog.gezhong.vip)
 
+# 更新日誌
 
-### 前端演示:[https://blog.gezhong.vip](https://blog.gezhong.vip "演示站点")
+> [持續更新地址 https://blog.gezhong.vip/article/009000/update-log.html](https://blog.gezhong.vip/article/009000/update-log.html '更新日誌')
+
+## 最近更新 (2020-12-31)
+
+- 2020-12-31: 加入 sitemap.xml
+- 2020-12-24: 本次更新，主要針對 SEO 和閱讀次數，以及多項細節優化
+
+### 前端演示: [https://blog.gezhong.vip](https://blog.gezhong.vip '演示站點')
+
 ![](https://s3.ax1x.com/2020/12/22/rrP81S.png)
 
-### 后端演示:
+### 後端演示:
+
 ![](https://s3.ax1x.com/2020/12/22/rrAWrD.png)
 
-## 捐赠
+## 捐贈
 
-如果你觉的本项目帮到你了，还请资持一下作者
+如果你覺得本專案幫到你了，還請支持一下作者
 
-* [捐赠](https://afdian.net/@zhaopp "爱发电")  
+- [捐贈](https://afdian.net/@zhaopp '愛發電')
